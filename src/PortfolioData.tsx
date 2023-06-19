@@ -3,7 +3,7 @@ export interface IPortfolioData {
   category: string;
 }
 
-export const PortfolioData: IPortfolioData[] = [
+export const portfolioData: IPortfolioData[] = [
   {
     img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
     category: "Business Cards",

@@ -1,6 +1,7 @@
 import { Tab, Tabs } from "react-bootstrap";
 import { PortfolioFun } from "./PortfolioTabs";
 import { StoreTabs } from "./StoreTabs";
+import { DropdownList } from "./DropdownList";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
           <PortfolioFun />
         </Tab>
         <Tab eventKey="Store" title="Store">
-          <StoreTabs/>
+          <StoreTabs />
+        </Tab>
+        <Tab eventKey="DropdownList" title="DropdownList">
+          <DropdownList />
         </Tab>
       </Tabs>
     </>
