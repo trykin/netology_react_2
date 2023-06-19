@@ -1,19 +1,20 @@
 import { Tab, Tabs } from "react-bootstrap";
-import { PortfolioFun } from "./FunctionalComponentTabs";
+import { PortfolioFun } from "./PortfolioTabs";
+import { StoreTabs } from "./StoreTabs";
 
 function App() {
   return (
     <>
       <Tabs
-        defaultActiveKey="Functional component"
+        defaultActiveKey="Portfolio"
         id="uncontrolled-tab-example"
         className="mb-3"
       >
-        <Tab eventKey="Functional component" title="Functional component">
+        <Tab eventKey="Portfolio" title="Portfolio">
           <PortfolioFun />
         </Tab>
-        <Tab eventKey="Class component" title="Class component">
-          Tab content for Profile
+        <Tab eventKey="Store" title="Store">
+          <StoreTabs/>
         </Tab>
       </Tabs>
     </>

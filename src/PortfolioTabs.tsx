@@ -1,7 +1,7 @@
 import { Tab, Tabs } from "react-bootstrap";
 import { filters } from "./Filter";
 import { useState } from "react";
-import { FunctionalComponentView } from "./FunctionalComponentView";
+import { PortfolioView } from "./PortfolioView";
 
 export function PortfolioFun() {
   const [currentFilter, setCurrentFilter] = useState<string>(filters[0]);
@@ -25,7 +25,7 @@ export function PortfolioFun() {
       ))}
       
     </Tabs>
-    <FunctionalComponentView filter={currentFilter}/>
+    <PortfolioView filter={currentFilter}/>
     </>
   );
 }

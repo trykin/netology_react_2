@@ -1,9 +1,9 @@
-export interface IData {
+export interface IPortfolioData {
   img: string;
   category: string;
 }
 
-export const data: IData[] = [
+export const PortfolioData: IPortfolioData[] = [
   {
     img: "https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/filter/img/mon.jpg",
     category: "Business Cards",
